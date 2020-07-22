@@ -40,7 +40,7 @@ router.post(
     req.session = {
       jwt: userJwt
     }
-    return res.status(201).send(existingUser)
+    return res.status(200).send(existingUser)
   })
 
 export { router as signInRouter }
