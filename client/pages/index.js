@@ -3,24 +3,21 @@ import PropTypes from 'prop-types';
 
 import buildClient from '../api/build-client';
 
-const LandingPage = ({ currentUser }) => {
-  console.log('currentUser: ', currentUser);
-  return (
-    <div>
-      index
+const LandingPage = ({ currentUser }) => (currentUser ? (
+  <h1>You are signed in</h1>
+) : (
+  <h1>You are NOT signed in</h1>
+));
 
-    </div>
-  );
-};
 LandingPage.getInitialProps = async (context) => {
-  const { data: currentUser } = await buildClient(context).get('/api/users/currentuser');
-  return {
-    currentUser,
-  };
+  const { data } = await buildClient(context).get('/api/users/currentuser');
+  return data;
 };
+
 LandingPage.defaultProps = {
   currentUser: null,
 };
+
 LandingPage.propTypes = {
   currentUser: PropTypes.shape({
     email: PropTypes.string,
