@@ -271,6 +271,19 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@gpbaculiok8stickets/common@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@gpbaculiok8stickets/common/-/common-1.0.3.tgz#e7516aacfebef096e07fe9ccc3dd813808ab3b82"
+  integrity sha512-vf1r9mbhx+lBk8cEuF33K8gFxh1ODjGcFNxvCfYsA5po9hu3Yc6oo1MHsJ5vg8ngfrFOVBHXcsTuM6lRSqXihw==
+  dependencies:
+    "@types/cookie-session" "^2.0.41"
+    "@types/express" "^4.17.7"
+    "@types/jsonwebtoken" "^8.5.0"
+    cookie-session "^1.4.0"
+    express "^4.17.1"
+    express-validator "^6.6.0"
+    jsonwebtoken "^8.5.1"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
